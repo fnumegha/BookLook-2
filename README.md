@@ -25,7 +25,7 @@ For a target user-item (u − i) pair, all squares involving the given user-item
 We use various Machine learning classifiers for training and prediction: Naive Bayes, Logistic Regression,SVM, Decision Trees and K-Nearest Neighbours. For evaluation, we use the Root Mean square Error (RMSE) metric. Following are the results.
 
 ```markdown
-**Machine Classifier            Root Mean Square Error**
+Machine Classifier            Root Mean Square Error
 ----------------------------------------------------
   Naive Bayes                     0.664574366817
   SVM                             0.631765686743
@@ -35,7 +35,7 @@ We use various Machine learning classifiers for training and prediction: Naive B
 ```
 As we can see, Logistic Regression seems to have outperformed the other classifiers with an RMSE value of 0.62. 
 
-### Conclusions / discussion
+### Conclusions
 
 ### References
 [1] (http://proceedings.mlr.press/v18/kong12a/kong12a.pdf)Love-Hate Square Counting Method for Recommender Systems
