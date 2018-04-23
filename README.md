@@ -38,5 +38,6 @@ As we can see, Logistic Regression seems to have outperformed the other classifi
 ### Conclusions
 
 ### References
-[1](http://proceedings.mlr.press/v18/kong12a/kong12a.pdf) Love-Hate Square Counting Method for Recommender Systems
-[2](http://www2.informatik.uni-freiburg.de/~cziegler/BX/) Book-Crossing Dataset
+[1](http://proceedings.mlr.press/v18/kong12a/kong12a.pdf) Love-Hate Square Counting Method for Recommender Systems.
+
+[2](http://www2.informatik.uni-freiburg.de/~cziegler/BX/) Book-Crossing Dataset.
