@@ -31,6 +31,11 @@ For a target user-item (u − i) pair, all squares involving the given user-item
 We use various Machine learning classifiers for training and prediction: Naive Bayes, Logistic Regression,SVM, Decision Trees and K-Nearest Neighbours. For evaluation, we use the Root Mean square Error (RMSE) metric. Following are the results.
 
 ```markdown
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
 Machine Classifier|Root Mean Square Error
 ------------ | -------------
 Naive Bayes|0.664574366817
