@@ -38,7 +38,7 @@ Machine Classifier     RMSE   Recall(Love)  Precision(Love)  Recall(Hate)  Preci
   Decision Tree        0.633  0.159          0.512            0.897         0.613           0.242           0.728
   KNN                  0.665  0.384          0.460            0.696         0.626           0.419           0.660
 ```
-We see that the RMSE values is on an average a 0.6 across all classifiers. The recall value of 'Love' though shows that the algorithm is achieving this good RMSE by classfying everything as 'hate'.It is important to notice that the threshold value to divide ratings into 'Love' and 'hate' was kept to be 6. 
+We see that the RMSE values is on an average a 0.6 across all classifiers. The recall value of 'Love' though shows that the algorithm is achieving this good RMSE by classifying everything as 'hate'.It is important to notice that the threshold value to divide ratings into 'Love' and 'hate' was kept to be 6. 
 
 ### Conclusions
 In this work, we tried to show that hate is as powerful a signal as is love towards a particular commodity and helps in indicating an user's preferences. 
