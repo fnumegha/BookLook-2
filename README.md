@@ -28,20 +28,20 @@ For a target user-item (u − i) pair, all squares involving the given user-item
 
 ### Evaluation and analysis of results
 
-We use various Machine learning classifiers for training and prediction: Naive Bayes, Logistic Regression,SVM, Decision Trees and K-Nearest Neighbours. For evaluation, we use the Root Mean square Error (RMSE) metric. Following are the results.
+We use various Machine learning classifiers for training and prediction: Naive Bayes, Logistic Regression,SVM, Decision Trees and K-Nearest Neighbours. For evaluation, we use RMSE, Recall, Precision,F-measure metrics. Following are the results.
 
 ```markdown
-Machine Classifier            Root Mean Square Error
-  Naive Bayes                      0.664574366817
-  SVM                              0.631765686743
-  Logistic Regression              0.628995454256
-  Decision Tree                    0.633138097528
-  KNN                              0.665118341998
+Machine Classifier     RMSE   Recall(Love)  Precision(Love)  Recall(Hate)  Precision(Hate) F-measure(Love) F-measure(Hate)
+  Naive Bayes          0.664  0.276          0.419            0.744         0.606           0.333           0.668  
+  SVM                  0.631  0.083          0.558            0.955         0.607           0.145           0.742
+  Logistic Regression  0.628  0.093          0.570            0.952         0.609           0.160           0.743
+  Decision Tree        0.633  0.159          0.512            0.897         0.613           0.242           0.728
+  KNN                  0.665  0.384          0.460            0.696         0.626           0.419           0.660
 ```
-As we can see, Logistic Regression seems to have outperformed the other classifiers with an RMSE value of 0.62. 
+We see that the RMSE values is on an average a 0.6 across all classifiers. The recall value of 'Love' though shows that the algorithm is achieving this good RMSE by classfying everything as 'hate'.It is important to notice that the threshold value to divide ratings into 'Love' and 'hate' was kept to be 6. 
 
 ### Conclusions
-In this work, we tried to show that hate is as powerful a signal as is love towards a particular commodity and helps tremedously in indicating an user's preferences. We adopted the Love-hate square counting method to prove this fact and the results confirm the same. All the classifiers used for final evaluation perform well, with Logistic Regression topping the charts. In general, an average of 0.6 RMSE over all the classifiers show that the method itself is quite valuable and reliable.
+In this work, we tried to show that hate is as powerful a signal as is love towards a particular commodity and helps in indicating an user's preferences. 
 
 ### References
 [1](http://proceedings.mlr.press/v18/kong12a/kong12a.pdf) Love-Hate Square Counting Method for Recommender Systems.
