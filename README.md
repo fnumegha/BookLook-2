@@ -2,6 +2,8 @@
 
 Welcome to BookLook! BookLook is a recommender system for book readers which aims to assist users in the task of finding the next book to read. BookLook will take into account both the dislikes and likes of the reader and his/her friends to recommend the “Next book to read”. 
 
+![Image](Old_Book_Library_Ladder_Bookshelf_Books_Desktop_1920x1200_Wallpaper_1920x1200_11112.jpg)
+
 ### Motivation
 
 Let's take an example to explain this! Suppose Cav is friends with Trump and Parisa. Now, Cav hates 3 books which Trump also hates & Cav loves 3 books which Parisa also loves. Now if we know that Trump likes "Twilight" and Parisa likes "Life of Pie", then , is it more likely for Cav to like "Twilight" or "Life of Pie"? This is exactly the question we are trying to answer with BookLook!
@@ -16,12 +18,13 @@ However, Goodreads does not seem to take into account the likes and dislikes of 
 
 We plan to use the Book-crossing dataset [2]. For implementation we are referring to [1] and will implement the Love-Hate Square counting Method. This method basically uses user-content collaborative filtering using network-based techniques. 
 
-![Image](lovehate.PNG)
-
-
 In the Love-Hate Square counting method, we would first create a bipartite rating network with two types of nodes (i.e. the users represented by circular nodes and the books represented by square nodes); the edges carrying scores which represent the users’ ratings to items; or all edges can be categorized as an I-love-it or an I-hate-it edge based on whether the rating score for the edge is above or below a threshold.
 
+![Image](lovehate.PNG)
+
 For a target user-item (u − i) pair, all squares involving the given user-item pair (i.e. paths that start from user u and end at the item i) are identified; the counts for each particular love-hate square configuration are tabulated; the counts for each love-hate configuration are then used as features in a machine learning framework for training and prediction [1].
+
+![Image](lovehate2.PNG)
 
 ### Evaluation and analysis of results
 
