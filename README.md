@@ -16,7 +16,7 @@ However, Goodreads does not seem to take into account the likes and dislikes of 
 
 We plan to use the Book-crossing dataset [2]. For implementation we are referring to [1] and will implement the Love-Hate Square counting Method. This method basically uses user-content collaborative filtering using network-based techniques. 
 
-<img src="BookLook/blob/master/lovehate.PNG" alt="hi" class="inline"/>
+<img src="https://github.com/fnumegha/BookLook" alt="hi" class="inline"/>
 
 In the Love-Hate Square counting method, we would first create a bipartite rating network with two types of nodes (i.e. the users represented by circular nodes and the books represented by square nodes); the edges carrying scores which represent the users’ ratings to items; or all edges can be categorized as an I-love-it or an I-hate-it edge based on whether the rating score for the edge is above or below a threshold.
 
@@ -27,7 +27,7 @@ For a target user-item (u − i) pair, all squares involving the given user-item
 We use various Machine learning classifiers for training and prediction: Naive Bayes, Logistic Regression,SVM, Decision Trees and K-Nearest Neighbours. For evaluation, we use the Root Mean square Error (RMSE) metric. Following are the results.
 
 ```markdown
-**Machine Classifier            Root Mean Square Error**
+**Machine Classifier**            **Root Mean Square Error**
   Naive Bayes                     0.664574366817
   SVM                             0.631765686743
   Logistic Regression             0.628995454256
