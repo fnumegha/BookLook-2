@@ -35,6 +35,7 @@ We use various Machine learning classifiers for training and prediction: Naive B
 As we can see, Logistic Regression seems to have outperformed the other classifiers with an RMSE value of 0.62. 
 
 ### Conclusions
+In this work, we tried to show that hate is as powerful a signal as is love towards a particular commodity and helps tremedously in indicating an user's preferences. We adopted the Love-hate square counting method to prove this fact and the results confirm the same. All the classifiers used for final evaluation perform well, with Logistic Regression topping the charts. In general, an average of 0.6 RMSE over all the classifiers show that the method itself is quite valuable and reliable.
 
 ### References
 [1](http://proceedings.mlr.press/v18/kong12a/kong12a.pdf) Love-Hate Square Counting Method for Recommender Systems.
