@@ -28,7 +28,7 @@ For a target user-item (u − i) pair, all squares involving the given user-item
 
 ### Evaluation and analysis of results
 
-We use various Machine learning classifiers for training and prediction: Naive Bayes, Logistic Regression,SVM, Decision Trees and K-Nearest Neighbours. For evaluation, we use RMSE, Recall, Precision,F-measure metrics. Following are the results.
+We ran multiple classifiers for the Love-hate Square Counting Method (SQM), SVM and Logistic Regression performed the best. We also used Matrix factorization and Neural Networks (Restricted Boltzmann Machine) for classification. The results are tabulated below.
 
 ```markdown
 Machine Classifier     RMSE   Recall(Love)  Precision(Love)  Recall(Hate)  Precision(Hate) F-measure(Love) F-measure(Hate)
@@ -37,11 +37,15 @@ Machine Classifier     RMSE   Recall(Love)  Precision(Love)  Recall(Hate)  Preci
   Logistic Regression  0.628  0.093          0.570            0.952         0.609           0.160           0.743
   Decision Tree        0.633  0.159          0.512            0.897         0.613           0.242           0.728
   KNN                  0.665  0.384          0.460            0.696         0.626           0.419           0.660
+  SVD                  0.643  0.949          0.644            0.143         0.636
+  RBM                  0.589
 ```
-We see that the RMSE values is on an average a 0.6 across all classifiers. The recall value of 'Love' though shows that the algorithm is achieving this good RMSE by classifying everything as 'hate'. It is important to notice that the threshold value to divide ratings into 'Love' and 'hate' was kept to be 6. 
+We can see that the RMSE for ML Classifiers is on an average 0.6, which is pretty decent. Though if we look at the Precision and recall values we see that the RMSE is good because a lot of entries are being classified as Hate. We see that SVD performs same as well. RBM does give us a better RMSE. 
+
+There could be two reasons for the odd precision and recall values : The data is heavily skewed for a threshold value of '6' or even '7'. Secondly, Predicting ratings is a complex multi class problem which we have further reduced to a binary classification probelm. 
 
 ### Conclusions
-In this work, we tried to show that hate is as powerful a signal as is love towards a particular commodity and helps in indicating a user's preferences. Interestingly, we found that the threshold value for classifying items as love or hate. 
+In this work, we tried to show that hate is as powerful a signal as is love towards a particular commodity and helps in indicating a user's preferences. 
 
 ### References
 [1](http://proceedings.mlr.press/v18/kong12a/kong12a.pdf) Love-Hate Square Counting Method for Recommender Systems.
