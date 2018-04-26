@@ -45,7 +45,7 @@ We can see that the RMSE for ML Classifiers is on an average 0.6, which is prett
 There could be two reasons for the odd precision and recall values : The data is heavily skewed for a threshold value of '6' or even '7'. Secondly, Predicting ratings is a complex multi class problem which we have further reduced to a binary classification probelm. 
 
 ### Conclusions
-In this work, we tried to show that hate is as powerful a signal as is love towards a particular commodity and helps in indicating a user's preferences. 
+In this work, we tried to show that hate is as powerful a signal as is love towards a particular commodity and helps in indicating a user's preferences. We showed this by comparing the Love-Hate square counting method against industry used methods like SVD and Neural networks, and we can see that this method performs at par with the industry specific methods in terms of RMSE.
 
 ### References
 [1](http://proceedings.mlr.press/v18/kong12a/kong12a.pdf) Love-Hate Square Counting Method for Recommender Systems.
